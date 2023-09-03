@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css  -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Spotify-clone</title>
+</head>
+
+<body>
+    <!-- sidebar  -->
+    <div class="sidebar">
+        <img src="icons and images/logo.png" alt="" class="logo">
+        <div class="sec-1">
+            <ul>
+                <li><a href="index.html" class="sec-1-li"><img src="icons and images/home.png" alt="">Home</a></li>
+                <li><a href="" class="sec-1-li"><img src="icons and images/search.png" alt="">Search</a></li>
+                <li><a href="" class="sec-1-li"><img src="icons and images/lib.png" alt="">Your Library</a></li>
+            </ul>
+        </div>
+        <div class="sec-2">
+            <ul>
+                <li><a href="" class="sec-2-li"><img src="icons and images/cr.png" alt="">Create Playlist</a></li>
+                <li><a href="" class="sec-2-li"><img src="icons and images/like.png" alt="">Liked Songs</a></li>
+            </ul>
+        </div>
+        <img src="icons and images/hr.png" alt="">
+    </div>
+    <!-- main  -->
+    <main>
+        <div class="main-1">
+            <div class="topbar">
+                <div class="topsec">
+                    <div class="top-left-sec">
+                        <li><img src="icons and images/back.png" alt="" onclick="history.back()"></li>
+                        <li><img src="icons and images/for.png" alt="" onclick="history.forward()"></li>
+                    </div>
+                    <div class="top-right-sec">
+                        <div class="upgrade">
+                            <p>Upgrade</p>
+                        </div>
+                        <div class="profile">
+                            <img src="icons and images/user.png" alt="">
+                            <p>Lijo</p>
+                            <img src="icons and images/down-chevron.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="tamil">
+                    <h1>Tamil</h1>
+                </div>
+            </div>
+        </div>
+        <div class="main-2">
+            <div class="main-2-top">
+                <div class="title">
+                    <h2>Popular Tamil playlists</h2>
+                </div>
+                <div class="show-all">
+                    <p>SHOW ALL</p>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="playlist-1" onclick="location.replace('rajarules.html')">
+                    <div class="playlist-content">
+                        <div class="img-sec">
+                            <img src="icons and images/ilayaraaja.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <div class="cap-1">
+                                <p>RajaRules</p>
+                            </div>
+                            <div class="cap-2">
+                                <p>"Unwind with the RajaRules: A Playlist for Every Mood"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-1" onclick="location.replace('rahmanrewind.html')">
+                    <div class="playlist-content">
+                        <div class="img-sec">
+                            <img src="icons and images/rahman.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <div class="cap-1">
+                                <p>RahmanRewind</p>
+                            </div>
+                            <div class="cap-2">
+                                <p>"Rahman Rewind: Rediscover the Timeless Melodies"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <!-- soundbar -->
+    <div class="soundbar">
+        <div class="song-details">
+            <img src="" alt="" class="pro-img">
+            <div class="song-name">
+                <p id="song-name"><a href=""></a></p>
+                <p id="artist"><a href=""></a></p>
+            </div>
+            <img src="icons and images/Likes.png" alt="" class="sng-detail-img">
+
+        </div>
+        <div class="play">
+            <div class="pause-play">
+                <li><img src="icons and images/Shuffle.png" alt=""></li>
+                <li><img src="icons and images/Previous.png" alt="" onclick="previous_song()" id="pre"></li>
+                <li><img src="icons and images/Group 1.png" alt="" onclick="justplay()" id="play"></li>
+                <li><img src="icons and images/Next.png" alt="" onclick="next_song()" id="next"></li>
+                <li><img src="icons and images/Repeat.png" alt=""></li>
+            </div>
+            <div class="timestamp">
+                <p class="start">0:00</p>
+                <form action="">
+                    <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+                </form>
+                <p class="end">0:00</p>
+            </div>
+        </div>
+        <div class="sec-3">
+            <li><img src="icons and images/Lyrics.png" alt=""></li>
+            <li><img src="icons and images/Queue.png" alt=""></li>
+            <li><img src="icons and images/Connect to a device.png" alt=""></li>
+            <li><img src="icons and images/Volume.png" alt="" onclick="mute_sound()"></li>
+            <form action=""">
+                    <input type=" range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

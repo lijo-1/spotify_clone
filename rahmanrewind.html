@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css  -->
+    <link rel="stylesheet" href="styles-1.css">
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Spotify-clone-Rahman rewind</title>
+</head>
+<body>
+   
+    <!-- sidebar  -->
+        <div class="sidebar">
+            <img src="icons and images/logo.png" alt="" class="logo">
+            <div class="sec-1">
+                <ul>
+                    <li><a href="index.html" class="sec-1-li"><img src="icons and images/home.png" alt="">Home</a></li>
+                    <li><a href="" class="sec-1-li"><img src="icons and images/search.png" alt="">Search</a></li>
+                    <li><a href="" class="sec-1-li"><img src="icons and images/lib.png" alt="">Your Library</a></li>
+                </ul>
+            </div>
+            <div class="sec-2">
+                <ul>
+                    <li><a href="" class="sec-2-li"><img src="icons and images/cr.png" alt="">Create Playlist</a></li>
+                    <li><a href="" class="sec-2-li"><img src="icons and images/like.png" alt="">Liked Songs</a></li>
+                </ul>
+            </div>
+            <img src="icons and images/hr.png">
+        </div>
+        <!-- main  -->
+        <main>
+            <div class="main-1-rahman">
+                <div class="topbar">
+                    <div class="topsec">
+                        <div class="top-left-sec">
+                            <li><img src="icons and images/back.png" alt="" onclick="history.back()"></li>
+                            <li><img src="icons and images/for.png" alt="" onclick="history.forward()"></li>
+                        </div>
+                        <div class="top-right-sec">
+                            <div class="upgrade">
+                                <p>Upgrade</p>
+                            </div>
+                            <div class="profile">
+                                <img src="icons and images/user.png" alt="">
+                                <p>Lijo</p>
+                                <img src="icons and images/down-chevron.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist-name">
+                        <div class="playlist-img">
+                            <img src="icons and images/rahman.jpg" alt="">
+                        </div>
+                        <div class="playlist-name-sec">
+                            <p>PLAYLIST</p>
+                            <h1>Rahman Rewind</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-2-rahman">
+                <div class="main-2-top">
+                    <ul>
+                        <li><img src="icons and images/big-play.png" alt="" onclick="loadtrack(5);playing();initial()"></li>
+                        <li><img src="icons and images/big-heart.png" alt=""></li>
+                        <li><img src="icons and images/more.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="main-2-bottom">
+                    <div class="row-1">
+                        <div class="div-1"><p>#</p></div>
+                        <div class="div-2"><p>TITLE</p></div>
+                        <div class="div-3"><p>ALBUM</p></div>
+                    </div>
+                    <div class="row-2">
+                        <div class="div-4"><p>1</p></div>
+                        <div class="div-5">
+                            <img src="icons and images/nenjukule.jpg" alt="" class="img">
+                            <div class="sng-name-div">
+                                <p class="sng-name" id="initial"  onclick="loadtrack(5);playing()">Nenjukkule</p>   
+                                <p class="artist">A.R.Rahman,Shakthishree Gopalan</p>
+                            </div>
+                        </div>
+                        <div class="div-6"><p>Kadal (Original Motion Picture Soundtrack)</p></div>
+                    </div>
+                    <div class="row-2">
+                        <div class="div-4"><p>2</p></div>
+                        <div class="div-5">
+                            <img src="icons and images/mazhai kuruvi.jpg" class="img">
+                            <div class="sng-name-div">
+                                <p class="sng-name" onclick="loadtrack(6);playing()">Mazhai Kuruvi</p>   
+                                <p class="artist">A.R.Rahman</p>
+                            </div>
+                        </div>
+                        <div class="div-6"><p>Chekka Chivantha Vaanam (Original Motion Picture Soundtrack)</p></div>
+                    </div>
+                    <div class="row-2">
+                        <div class="div-4"><p>3</p></div>
+                        <div class="div-5">
+                            <img src="icons and images/enna solla.jpg" alt="" class="img">
+                            <div class="sng-name-div">
+                                <p class="sng-name" onclick="loadtrack(7);playing()">Enna Solla Pogirai</p>   
+                                <p class="artist">A.R.Rahman,Shankar Mahadevan</p>
+                            </div>
+                        </div>
+                        <div class="div-6"><p>Kandukondain Kandukondain (Original Motion Picture Soundtrack)</p></div>
+                    </div>
+                    <div class="row-2">
+                        <div class="div-4"><p>4</p></div>
+                        <div class="div-5">
+                            <img src="icons and images/kurukku.jpg" alt="" class="img">
+                            <div class="sng-name-div">
+                                <p class="sng-name" onclick="loadtrack(8);playing()">Kurukku Siruthvalea</p>   
+                                <p class="artist">Hariharan,Mahalakshmi Iyer</p>
+                            </div>
+                        </div>
+                        <div class="div-6"><p>Mudhalvan (Original Motion Picture Soundtrack)</p></div>
+                    </div>
+                    <div class="row-2">
+                        <div class="div-4"><p>5</p></div>
+                        <div class="div-5">
+                            <img src="icons and images/kaatre.jpg" alt="" class="img">
+                            <div class="sng-name-div">
+                                <p class="sng-name" onclick="loadtrack(9);playing()">Kaattrae En Vaasal - Wind</p>   
+                                <p class="artist">Unnikrishnan,Kavita Krishnamurthy</p>
+                            </div>
+                        </div>
+                        <div class="div-6"><p>Rhythm</p></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <hr>    
+            </footer>
+        </main>
+    
+        
+    <!-- soundbar -->
+    <div class="soundbar">
+        <div class="song-details">
+            <img src="" alt="" class="pro-img">
+            <div class="song-name">
+                <p id="song-name"><a href=""></a></p>   
+                <p id="artist"><a href=""></a></p>
+            </div>
+           <img src="icons and images/Likes.png" alt="" class="sng-detail-img">
+            
+        </div>
+        <div class="play">
+            <div class="pause-play">
+                <li><img src="icons and images/Shuffle.png" alt=""></li>
+                <li><img src="icons and images/Previous.png" alt="" onclick="previous_song()" id="pre"></li>
+                <li><img src="icons and images/Group 1.png" alt=""  onclick="justplay()" id="play"></li>
+                <li><img src="icons and images/Next.png" alt="" onclick="next_song()" id="next"></li>
+                <li><img src="icons and images/Repeat.png" alt=""></li>
+            </div>
+            <div class="timestamp">
+                <p class="start">0:00</p>
+                <form action="">
+                    <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()"> 
+                </form>
+                <p class="end">0:00</p>
+            </div>
+        </div>
+            <div class="sec-3">
+                <li><img src="icons and images/Lyrics.png" alt=""></li>
+                <li><img src="icons and images/Queue.png" alt=""></li>
+                <li><img src="icons and images/Connect to a device.png" alt=""></li>
+                <li><img src="icons and images/Volume.png" alt="" onclick="mute_sound()"></li>
+                <form action=""">
+                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume"> 
+                </form>
+            </div>
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
