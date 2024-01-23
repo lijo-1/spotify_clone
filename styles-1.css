@@ -29,7 +29,7 @@ body {
     left: 0px;
     background-color: #000;
     width: 265px;
-    height: 100vh;
+    height: 100%;
 }
 
 .logo {
@@ -506,6 +506,7 @@ main {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+
 
 .row-1,
 .row-2 {
