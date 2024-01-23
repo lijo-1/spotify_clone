@@ -18,6 +18,10 @@
     border-radius: 6px; /* Round corners of the thumb */
   }
   
+  body {
+    overflow:overlay;
+    overflow-x: hidden;
+  }
 /* ---------------------------------------------------------------sidebar----------------------------------------  */
 .sidebar{
     position:fixed;
@@ -25,7 +29,7 @@
     left:0px;
    background-color: #000;
    width: 265px;
-   height:100vh;
+   height:100%;
 }
 
 .logo{
@@ -398,7 +402,7 @@ main{
 .main-2{
     padding:32px;
     width:1271px;
-    /* height:100%; */
+    height:100vh;
     background: #181818;
     background: linear-gradient(to top, #121212 33%, #080808 100%);
 }
